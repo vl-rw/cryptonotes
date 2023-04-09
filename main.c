@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<string.h> // for strlen
+#include<string.h> // just for strlen  - 44 and 116 line 
 
 
 int main()
