@@ -6,7 +6,7 @@ int main()
 {
     char mode[10];
     
-    char* main_menu_text = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*** https://github.com/vl-rw/my_site ***\n░░░░░░░░░░░░ MAIN MENU ░░░░░░░░░░░░░░░░░\n\n░░░░░░░ - e for encoding \n\n░░░░░░░ - d for decoding \n\n░░░░░░░ - other key to exit\n\n░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n*** choose regime: ***"; 
+    char* main_menu_text = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*** https://github.com/vl-rw/cryptonotes ***\n░░░░░░░░░░░░ MAIN MENU ░░░░░░░░░░░░░░░░░\n\n░░░░░░░ - e for encoding \n\n░░░░░░░ - d for decoding \n\n░░░░░░░ - other key to exit\n\n░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n*** choose regime: ***"; 
    
     puts (main_menu_text);
             
@@ -22,7 +22,7 @@ int main()
     
             char str[1024], pass[1024], pass_long[1024];
             
-            char* main_menu_text = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*** https://github.com/vl-rw/my_site ***\n░░░░░░░░░░░░ ENCODING ░░░░░░░░░░░░░░░░░░\n\n░░░░░░░ enter a password string, then \n        space, then string that is needs \n        to be encoded, THEN ~. \n\n░░░░░░░ For example: \n\n░░░░░░░ \"password SECRET information HERE~\"\n\n░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n*** Type it here: ***"; 
+            char* main_menu_text = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*** https://github.com/vl-rw/cryptonotes ***\n░░░░░░░░░░░░ ENCODING ░░░░░░░░░░░░░░░░░░\n\n░░░░░░░ enter a password string, then \n        space, then string that is needs \n        to be encoded, THEN ~. \n\n░░░░░░░ For example: \n\n░░░░░░░ \"password SECRET information HERE~\"\n\n░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n*** Type it here: ***"; 
    
             puts (main_menu_text);
         
@@ -105,7 +105,7 @@ int main()
         
         char str[1024], pass[1024], pass_long[1024];
         
-        char* main_menu_text = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*** https://github.com/vl-rw/my_site ***\n░░░░░░░░░░░░ DECODING ░░░░░░░░░░░░░░░░░░\n\n░░░░░░░ Please enter a password string, \n\n░░░░░░░ THEN SPACE, \n\n░░░░░░░ and only then enter\n\n░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n*** Type it here: ***"; 
+        char* main_menu_text = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*** https://github.com/vl-rw/cryptonotes ***\n░░░░░░░░░░░░ DECODING ░░░░░░░░░░░░░░░░░░\n\n░░░░░░░ Please enter a password string, \n\n░░░░░░░ THEN SPACE, \n\n░░░░░░░ and only then enter\n\n░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n*** Type it here: ***"; 
    
         puts (main_menu_text);
     
