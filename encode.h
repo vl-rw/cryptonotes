@@ -1,43 +1,8 @@
-#include <stdio.h>
-#include<string.h> // just for strlen  - 44 and 116 line 
+           
 
+void encode_alg(char str[1024], pass[1024], filename[1024]) {     
 
-int main()
-{
-    char mode[10];
-    
-    char* main_menu_text = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*** https://github.com/vl-rw/cryptonotes ***\n░░░░░░░░░░░░ MAIN MENU ░░░░░░░░░░░░░░░░░\n\n░░░░░░░ - e for encoding \n\n░░░░░░░ - d for decoding \n\n░░░░░░░ - other key to exit\n\n░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n*** choose regime: ***"; 
-   
-    puts (main_menu_text);
-            
-//     printf("Select regime, \n - a for encoding, \n - d for decoding\n - other key to exit");
-    
-    scanf("%10[^\n]", mode); 
-    
-    if ( mode[0] == 'e' ) { 
-        
-        
-        
-            int i;
-    
-            char str[1024], pass[1024], pass_long[1024];
-            
-            char* main_menu_text = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*** https://github.com/vl-rw/cryptonotes ***\n░░░░░░░░░░░░ ENCODING ░░░░░░░░░░░░░░░░░░\n\n░░░░░░░ enter a password string, then \n        space, then string that is needs \n        to be encoded, THEN ~. \n\n░░░░░░░ For example: \n\n░░░░░░░ \"password SECRET information HERE~\"\n\n░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n*** Type it here: ***"; 
-   
-            puts (main_menu_text);
-        
-//             printf("\nPlease enter a password string, then space, then string that is needs to be encoded, THEN ~.\t");
-            
-//             printf("\n For example, \"password SECRET information HERE~\" \t");
-
-            scanf("%1023[^ ]", pass); 
-            
-            scanf("%1023[^~]", str);
-            
-            printf("\npassword: %s", pass);
-
-            
-
+ 			pass_long[1024];
             
             printf("\nstring: %s", str);
             
@@ -70,13 +35,15 @@ int main()
                 
             };
                 
-            printf("\nEncrypted string: \"%s", str);    printf("\", by a code %s", pass);    /*printf("\"");*/
+            printf("\nEncrypted string: \"%s", str);    
+            
+            printf("\", by a code %s", pass);   
             
             
         
         FILE *fp;
 
-        fp = fopen("cipher", "w+");
+        fp = fopen(filename, "w+");
         
         fputs(str, fp);
         
@@ -96,9 +63,16 @@ int main()
             printf("\nDecrypted string: %s\n", str);
         
         
-    } else if ( mode[0] == 'd' ) { 
+    } 
+    
+    
+    
+    
+void decode_alg(char str[1024], pass[1024], filename[1024]) {     
+    
+
         
-        
+        pass_long[1024];
         
         
         int i;
@@ -109,7 +83,6 @@ int main()
    
         puts (main_menu_text);
     
-//         printf("\nPlease enter a password string, THEN SPACE, and then enter\t");
 
         scanf("%1023[^ ]", pass); 
         
@@ -132,7 +105,7 @@ int main()
         
         FILE *fp;
 
-        fp = fopen("cipher", "r+");
+        fp = fopen(filename, "r+");
 
         fgets(str, 1024, (FILE*)fp);
         
@@ -152,19 +125,10 @@ int main()
             
         };
             
-        printf("\nDecrypted string: %s", str);    printf(", by a code %s", pass);    printf("\n");
-        
-        
-        
-        
-        
-        
-    } else {return 0;};
-    
-    
+        printf("\nDecrypted string: %s", str);
+        printf(", by a code %s", pass);    
+        printf("\n");
 
-    
-
-    return 0;
-    
-}
+        
+        
+    } 
