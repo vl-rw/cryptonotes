@@ -12,17 +12,7 @@ became a bit longer.
 
 To compile, type:
 ```
-cc -c -g encode.c
-```
-
-Then: 
-```
-cc -c -g program.c
-```
-
-Then
-```
-cc -o program program.o encode.o
+make
 ```
 
 You can use gcc instead. More about that [library-making](https://computer.howstuffworks.com/c15.htm).
