@@ -1,5 +1,7 @@
 # Cryptonotes
 
+[![DONATE](https://vl-rw.github.io/my_site/program/icon.png)](https://vl-rw.github.io/my_site/donate/index.html)
+
 Program for encoding message with some password. Now (16.4.23) there
 is 2.0 version - you can open program via terminal and choose memory
 slot, then regime (encode / decode), then write a note or read it.
