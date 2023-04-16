@@ -1,6 +1,6 @@
 all: 
 	cc -c -g encode.c
 	
-	cc -c -g program.c
+	cc -c -g app.c
 	
-	cc -o program program.o encode.o
+	cc -o app app.c encode.o

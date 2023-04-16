@@ -1,15 +1,15 @@
 /* encode.c */
 #include "encode.h"        
 #include <stdio.h>
-#include <string.h> // just for strlen  - 44 and 116 line 
+#include <string.h> 
 
-void encode_alg(char str_e[1024], char pass_e[1024], char filename_e[1024]) {     
+
+
+void encode_alg(    char str_e[1024], char pass_e[1024], char filename_e[1024]  ) {     
 
  			char pass_long[1024];
  			
  			int i;
-            
-            printf("\nstring: %s", str_e);
             
             size_t length = strlen(pass_long);
             
@@ -42,51 +42,21 @@ void encode_alg(char str_e[1024], char pass_e[1024], char filename_e[1024]) {
                 
             };
                 
-            printf("\nEncrypted string: \"%s", str_e);    
+            printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEncrypted string:\n \"%s", str_e);    
             
-            printf("\", by a code %s", pass_e);   
+            printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
             
-            
-        
-        FILE *fp;
+} 
+    
+    
+    
+    
+void decode_alg(    char str_d[1024], char pass_d[1024], char filename_d[1024]  ) {     
 
-        fp = fopen(filename_e, "w+");
-        
-        fputs(str_e, fp);
-        
-        fclose(fp);
-        
-            
-            pass_step = 1;
-            
-            for (i = 0; (i < 1024 && str_e[i] != '\0'); i++) {
-                
-                str_e[i] = (str_e[i] + pass_long[pass_step]) -110; 
-
-                pass_step++;
-                
-            };
-                
-            printf("\nDecrypted string: %s\n", str_e);
-        
-        
-    } 
-    
-    
-    
-    
-void decode_alg(char str_d[1024], char pass_d[1024], char filename_d[1024]) {     
-    
-
-        
         char pass_long[1024];
-        
         
         int i;
         
-        char* main_menu_text = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*** https://github.com/vl-rw/cryptonotes ***\n░░░░░░░░░░░░ DECODING ░░░░░░░░░░░░░░░░░░\n\n░░░░░░░ Please enter a password string, \n\n░░░░░░░ THEN SPACE, \n\n░░░░░░░ and only then enter\n\n░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n*** Type it here: ***"; 
-   
-        puts (main_menu_text);
     
 
         scanf("%1023[^ ]", pass_d); 
@@ -120,8 +90,6 @@ void decode_alg(char str_d[1024], char pass_d[1024], char filename_d[1024]) {
             
 
     
-    
-        
         pass_step = 1;
 
         for (i = 0; (i < 1024 && str_d[i] != '\0'); i++) {
@@ -132,10 +100,9 @@ void decode_alg(char str_d[1024], char pass_d[1024], char filename_d[1024]) {
             
         };
             
-        printf("\nDecrypted string: %s", str_d);
-        printf(", by a code %s", pass_d);    
-        printf("\n");
-
+        printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDecrypted string: \n%s", str_d);
         
+        printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+     
         
-    } 
+} 
