@@ -33,7 +33,7 @@ int main() {
     
     fclose(fp);
     
-    puts ("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n*** choose regime: ***");
+    puts ("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n*** choose slot (type it's number): ***");
             
     
     
@@ -76,7 +76,7 @@ int main() {
     
     for (int i = 1; i<8; i++) printf("░░░░░░░ \n\n");
     
-    puts ("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n*** choose memory slot: ***");
+    puts ("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n*** choose regime, type carefully: ***");
 
     
     scanf("%10[^=]", mode); 
